@@ -7,7 +7,7 @@ sudo pip install ansible
 ```
 brew cask install vagrant
 ```
-## Virtual box
+## Virtual box:
 ```
 brew cask install virtualbox
 ```
