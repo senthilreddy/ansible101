@@ -1,5 +1,4 @@
-# ansible101
-## Install Ansible:
+## Linux Install Ansible:
 ``` 
 sudo pip install ansible
 ```
