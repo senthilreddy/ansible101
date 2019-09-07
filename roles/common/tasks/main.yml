@@ -1,0 +1,17 @@
+---
+- name: Install EPEL repo
+  yum: name=epel-release state=present
+
+- name: Install Nginx repo
+  yum: name=http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm state=present
+
+- name: Remove default Apache
+  yum: name={{ item }} state=absent
+  with_items:
+    - httpd
+    - httpd-tools
+- selinux:
+    state: disabled
+    
+- name: Upgrade all packages
+  yum: name=* state=latest

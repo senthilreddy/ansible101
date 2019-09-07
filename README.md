@@ -14,3 +14,9 @@ brew cask install vagrant
 ```
 brew cask install virtualbox
 ```
+
+## Create Ansible role
+
+```
+ansible-galaxy init <rolename>
+```

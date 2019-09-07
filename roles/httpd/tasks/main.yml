@@ -1,9 +1,0 @@
-- name: Install Apache server from yum repository
-  yum: name={{item}} state=present
-  with_items:
-   - httpd
-   - mod_ssl
-   - mod_wsgi
-
-- name: Start httpd
-  systemd: name=httpd state=started enabled=yes

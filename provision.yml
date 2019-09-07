@@ -1,0 +1,11 @@
+- hosts: dev
+  become: yes
+  become_method: sudo
+  vars_files:
+    - "group_vars/users.yml"
+  roles:
+    - common
+    - mariadb
+    - nginx
+    - php-fpm
+    - wordpress

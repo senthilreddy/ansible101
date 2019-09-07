@@ -1,0 +1,6 @@
+name: localhost
+hostname: "{{ name }}.localdomain"
+# WordPress database settings
+wp_db_name: wordpress
+wp_db_user: wordpress
+wp_db_password: secret
