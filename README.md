@@ -3,6 +3,10 @@
 ``` 
 sudo pip install ansible
 ```
+## Brew Install Ansible:
+``` 
+brew install ansible
+```
 ## Install Vagrant:
 ```
 brew cask install vagrant
